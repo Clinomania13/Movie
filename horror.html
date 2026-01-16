@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Movies - Movie Posters by Genre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cinema-grain"></div>
+    
+    <header class="genre-header-streaming">
+        <a href="index.html" class="back-link-top">← BACK TO HOME</a>
+        <h1>👻 HORROR MOVIES</h1>
+        <p class="genre-description">Dare to be terrified with spine-chilling tales that explore humanity's deepest fears and darkest nightmares. From psychological terror to supernatural scares, these films masterfully create atmospheric dread and suspense that lingers long after the lights come back on.</p>
+    </header>
+
+    <section class="streaming-section">
+        <h2 class="trending-title">Trending Horror Movies</h2>
+        
+        <div class="streaming-grid">
+            <!-- The Shining -->
+            <div class="streaming-card" onclick="openModal('the-shining')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/shining.jpg" alt="The Shining Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>THE SHINING</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- Orphan -->
+            <div class="streaming-card" onclick="openModal('orphan')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/orphan.jpg" alt="Orphan Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>ORPHAN</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- HEREDITARY -->
+            <div class="streaming-card" onclick="openModal('hereditary')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/hereditary.jpg" alt="Hereditary Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>HEREDITARY</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- The Conjuring -->
+            <div class="streaming-card" onclick="openModal('the-conjuring')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/conjuring.jpg" alt="The Conjuring Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>THE CONJURING</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- Seklusyon -->
+            <div class="streaming-card" onclick="openModal('seklusyon')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/seklusyon.jpg" alt="Seklusyon Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>SEKLUSYON</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- Insidious -->
+            <div class="streaming-card" onclick="openModal('insidious')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/insidious.jpg" alt="Insidious Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>INSIDIOUS</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- IT -->
+            <div class="streaming-card" onclick="openModal('It')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/IT.jpg" alt="IT Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>IT</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- The Divine Fury -->
+            <div class="streaming-card" onclick="openModal('the-divine-fury')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/divinefury.jpg" alt="The Divine Fury Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>THE DIVINE FURY</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Details Modals -->
+    <div id="the-shining" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('the-shining')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/shining.jpg" alt="The Shining Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>THE SHINING</h2>
+                    <p class="modal-year">1980</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Jack Nicholson as Jack Torrance</li>
+                            <li>Shelley Duvall as Wendy Torrance</li>
+                            <li>Danny Lloyd as Danny Torrance</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A struggling writer and recovering alcoholic accepts a position as the winter caretaker of the isolated Overlook Hotel in the Colorado Rockies with his family, where supernatural forces and his own deteriorating mental state slowly drive him toward violent madness and murderous rage. Stanley Kubrick's meticulous adaptation of Stephen King's novel stands as a masterclass in atmospheric horror, psychological tension, and cinematic composition that has influenced generations of filmmakers. Jack Nicholson's increasingly unhinged performance combined with Kubrick's innovative use of Steadicam, symmetrical framing, and unsettling imagery created some of horror cinema's most iconic and enduring moments. The Overlook Hotel itself becomes a malevolent character through the director's haunting visual storytelling and oppressive atmosphere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="orphan" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('orphan')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/orphan.jpg" alt="Orphan Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>ORPHAN</h2>
+                    <p class="modal-year">2009</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Isabelle Fuhrman as Esther</li>
+                            <li>Vera Farmiga as Kate Coleman</li>
+                            <li>Peter Sarsgaard as John Coleman</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">This psychological horror film follows a grieving couple who adopt a seemingly intelligent and well-mannered young girl from an orphanage. As disturbing events unfold, the adoptive mother begins to suspect that the child is hiding a dangerous secret. The story centers on deception, trauma, and maternal instinct as the family confronts a hidden threat within their home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hereditary" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('hereditary')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/hereditary.jpg" alt="Hereditary Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>HEREDITARY</h2>
+                    <p class="modal-year">2018</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Toni Collette as Annie Graham</li>
+                            <li>Alex Wolff as Peter Graham</li>
+                            <li>Milly Shapiro as Charlie Graham</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A grieving family struggles with disturbing occurrences and dark revelations following the death of their secretive grandmother, as they discover terrifying secrets about their ancestry and face supernatural forces beyond their comprehension. Ari Aster's haunting debut delivers relentless psychological horror through exceptional performances, deeply unsettling imagery, and a pervasive atmosphere of dread. Toni Collette's powerhouse performance anchors this devastating tale of grief, inherited trauma, and occult terror that builds to a nightmarish crescendo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="the-conjuring" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('the-conjuring')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/conjuring.jpg" alt="The Conjuring Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>THE CONJURING</h2>
+                    <p class="modal-year">2013</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                           <li>Patrick Wilson as Ed Warren</li>
+                            <li>Vera Farmiga as Lorraine Warren</li>
+                            <li>Lili Taylor as Carolyn Perron</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">Renowned paranormal investigators Ed and Lorraine Warren are called upon to help a family living in a secluded Rhode Island farmhouse who are being terrorized by a dark and malevolent supernatural presence with a horrific history. James Wan crafted a modern horror classic that masterfully combines classic haunted house tropes with innovative scares and genuine character development. The film's critical and commercial success revitalized the supernatural genre and spawned The Conjuring Universe, one of the most successful horror franchises in cinema history.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="seklusyon" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('seklusyon')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/seklusyon.jpg" alt="Seklusyon Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>SEKLUSYON</h2>
+                    <p class="modal-year">2016</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Phoebe Walker as Madre  Cecilia</li>
+                            <li>Rhed Bustamante as Anghela Sta. Ana</li>
+                            <li>Ronnie Alonte as Miguel</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">This Filipino religious horror film follows four seminarians undergoing a period of isolation before ordination. During their seclusion, they encounter a mysterious young girl believed to possess miraculous powers, raising doubts about whether she represents holiness or evil. The film explores themes of faith, corruption, and moral ambiguity, using supernatural symbolism to question the perceived purity of religious institutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="insidious" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('insidious')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/insidious.jpg" alt="Insidious Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>INSIDIOUS</h2>
+                    <p class="modal-year">2010</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                             <li>Patrick Wilson as Josh Lambert</li>
+                            <li>Leigh Whannell as Specs</li>
+                            <li>Rose Byrne as Renai Lambert</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">This supernatural horror film follows a family whose child falls into a mysterious coma, triggering escalating paranormal events. They discover that the child’s spirit is trapped in a malevolent spirit realm, making him vulnerable to demonic possession. The story explores themes of the supernatural, familial bonds, and the struggle to confront and overcome unseen evil.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="It" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('It')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/IT.jpg" alt="It Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>IT</h2>
+                    <p class="modal-year">2017</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Bill Skarsgård as Pennywise</li>
+                            <li>Finn Wolfhard as Richie Tozier</li>
+                            <li>Jaeden Martell as Bill Denbrough</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">This horror novel tells the story of a group of outcast children in a small town who confront a malevolent, shape-shifting entity that emerges every 27 years to prey on the fears of the town’s youth. The creature manifests in forms that reflect each child’s deepest anxieties, most notoriously appearing as a sinister clown. The narrative alternates between their experiences as children in the late 1950s and their return as adults in the 1980s to honor a promise to defeat the evil that traumatized them. Beyond its supernatural horror elements, the story explores themes of friendship, bravery, and the psychological effects of fear and trauma, highlighting how collective courage and resilience can overcome persistent evil.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="the-divine-fury" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('the-divine-fury')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/divinefury.jpg" alt="The Divine Fury Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>THE DIVINE FURY</h2>
+                    <p class="modal-year">2019</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Park Seo-Joon as Yong-hoo</li>
+                            <li>Woo Do-hwan as Ji-shin</li>
+                            <li>Ahn Sung-ki as FAther Ahn</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">This Korean action-horror film follows a successful mixed martial artist who harbors resentment toward religion after experiencing childhood trauma. When he develops mysterious wounds linked to supernatural forces, he becomes involved in battles against demonic entities alongside a priest. The narrative blends martial arts and horror while exploring themes of faith, redemption, and the struggle between good and evil.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-line"></div>
+            <p class="creator"><strong>Created by:</strong> GROUP 10</p>
+            <p class="creators"><strong> Cardoza, Ersando, Salonga, Zapanta </p>
+            <p class="course-info"><strong>Course:</strong> BSCS 1-5 </p>
+            <p class="year"><strong>Year:</strong> 2025</p>
+            <p class="institution">Cavite State University - Don Severino de las Alas Campus</p>
+            <p class="department">College of Engineering and Information Technology</p>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+</body>
+</html>

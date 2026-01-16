@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance Movies - Movie Posters by Genre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cinema-grain"></div>
+
+<header class="genre-header-streaming">
+    <a href="index.html" class="back-link-top">← BACK TO HOME</a>
+    <h1>❤️ Romance Movies</h1>
+    <p class="genre-description">
+        Experience heart-fluttering romance with tender moments, deep emotional connections, and unforgettable love stories.
+    </p>
+</header>
+
+<section class="streaming-section">
+    <h2 class="trending-title">Trending Romance Movies</h2>
+
+    <div class="streaming-grid">
+
+        <!-- LA LA LAND -->
+        <div class="streaming-card" onclick="openModal('lalaland')">
+            <img src="IMAGES/lalaland.jpg" alt="La La Land Poster" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>LA LA LAND</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- THE NOTEBOOK -->
+        <div class="streaming-card" onclick="openModal('thenotebook')">
+            <img src="IMAGES/thenotebook.jpg" alt="The Notebook Poster" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>THE NOTEBOOK</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- BEFORE SUNRISE -->
+        <div class="streaming-card" onclick="openModal('beforesunrise')">
+            <img src="IMAGES/beforesunrise.jpg" alt="Before Sunrise Poster" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>BEFORE SUNRISE</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- PRIDE AND PREJUDICE -->
+        <div class="streaming-card" onclick="openModal('prideandprejudice')">
+            <img src="IMAGES/prideandprejudice.jpg" alt="Pride and Prejudice Poster" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>PRIDE AND PREJUDICE</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- CRAZY RICH ASIANS -->
+        <div class="streaming-card" onclick="openModal('crazyrichasians')">
+            <img src="IMAGES/crazyrichasians.jpg" alt="Crazy Rich Asians Poster" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>CRAZY RICH ASIANS</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- BEAUTY AND THE BEAST -->
+        <div class="streaming-card" onclick="openModal('beautyandthebeast')">
+            <img src="IMAGES/beautyandthebeast.jpg" alt="Beauty and the Beast Poster" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>BEAUTY AND THE BEAST</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- 10 THINGS I HATE ABOUT YOU -->
+        <div class="streaming-card" onclick="openModal('10thingsihateaboutyou')">
+            <img src="IMAGES/10thingsihateaboutyou.jpg" alt="10 Things I Hate About You Poster" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>10 THINGS I HATE ABOUT YOU</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- HOW TO LOSE A GUY IN 10 DAYS -->
+        <div class="streaming-card" onclick="openModal('howtoloseaguyin10days')">
+            <img src="IMAGES/howtoloseaguyin10days.jpg" alt="How to Lose a Guy in 10 Days Poster" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>HOW TO LOSE A GUY IN 10 DAYS</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<!-- ================= MODALS ================= -->
+
+<!-- LA LA LAND MODAL -->
+<div id="lalaland" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('lalaland')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/lalalandmodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>LA LA LAND</h2>
+                <p class="modal-year">2016 • Romance</p>
+                <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                           <li>Ryan Gosling as Sebastian Wilder</li>
+                            <li>Emma Stone as Mia Dolan</li>
+                            <li>John Legend as Keith</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+                    An aspiring actress working in a coffee shop and a passionate jazz pianist struggling to open his own club fall deeply in love while pursuing their artistic dreams in the magical yet challenging landscape of Los Angeles. Damien Chazelle's enchanting modern musical masterpiece swept the awards season with a record-tying 14 Oscar nominations, ultimately winning six including Best Director and Best Actress. The film's stunning cinematography, memorable original songs by Justin Hurwitz, and bittersweet ending explore the painful tension between romantic love and personal ambition with breathtaking dance sequences and emotional depth. Emma Stone won the Academy Award for Best Actress for her luminous and vulnerable performance that captures the hope and heartbreak of chasing Hollywood dreams.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- THE NOTEBOOK MODAL -->
+<div id="thenotebook" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('thenotebook')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/thenotebookmodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>THE NOTEBOOK</h2>
+                <p class="modal-year">2004 • Romance</p>
+                <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                             <li>Ryan Gosling as Noah Calhoun</li>
+                            <li>Rachel McAdams as Allie Hamilton</li>
+                            <li>James Garner as Duke / Older Noah</li>
+                        </ul>
+                </div>
+                <p class="modal-synopsis">
+                    A poor yet passionate young man falls intensely in love with a rich young woman from a different social class during one magical summer in 1940s South Carolina, giving her a profound sense of freedom and true love despite family opposition and societal expectations. Based on Nicholas Sparks' bestselling novel, this sweeping epic love story spanning multiple decades became a cultural phenomenon and modern romance classic. The film's iconic rain-soaked kiss scene and the heartbreaking framing story of elderly lovers have made it one of the most beloved romantic films of all time.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BEFORE SUNRISE MODAL -->
+<div id="beforesunrise" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('beforesunrise')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/beforesunrisemodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>BEFORE SUNRISE</h2>
+                <p class="modal-year">1995 • Romance</p>
+                <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Ethan Hawke as Jesse Wallace</li>
+                            <li>Julie Delpy as Céline</li>
+                            <li>Andrea Eckert as Wife on Train</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+                    Two young strangers, an American man and a French woman, meet by chance on a train to Vienna and decide to spend one magical, conversation-filled night together exploring the romantic city before parting ways at sunrise, possibly forever. Richard Linklater's intimate and dialogue-driven romance perfectly captures the beauty of fleeting connection, intellectual chemistry, and the possibility of love at first sight. The film spawned two critically acclaimed sequels that follow the same characters across decades, creating one of cinema's most beloved romantic trilogies.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PRIDE AND PREJUDICE MODAL -->
+<div id="prideandprejudice" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('prideandprejudice')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/prideandprejudicemodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>PRIDE AND PREJUDICE</h2>
+                <p class="modal-year">2005 • Romance</p>
+                <p class="modal-year">2005 • Romance</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Keira Knightley as Elizabeth Bennet</li>
+                            <li>Matthew Macfadyen as Mr. Fitzwilliam Darcy</li>
+                            <li>Rosamund Pike as Jane Bennet</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+                    In Georgian era England, sparks fly when the spirited and independent Elizabeth Bennet meets the wealthy, seemingly arrogant Mr. Darcy, leading to a romance built on overcoming first impressions, personal growth, and mutual respect. Joe Wright's visually stunning adaptation of Jane Austen's beloved novel breathes vibrant new life into the timeless classic romance with lush cinematography and authentic period detail. Keira Knightley's spirited and nuanced performance earned her an Academy Award nomination while capturing Elizabeth's wit, intelligence, and romantic journey.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CRAZY RICH ASIANS MODAL -->
+<div id="crazyrichasians" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('crazyrichasians')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/crazyrichasiansmodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>CRAZY RICH ASIANS</h2>
+                <p class="modal-year">2018 • Romance / Comedy</p>
+                <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Constance Wu as Rachel Chu</li>
+                            <li>Henry Golding as Nick Young</li>
+                            <li>Michelle Yeoh as Eleanor Young</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+                    A New York economics professor travels to Singapore to meet her boyfriend's extremely wealthy and traditional family for the first time, only to face intense scrutiny and social pressure from his disapproving mother and Singapore's elite society. This groundbreaking romantic comedy became a cultural phenomenon as the first Hollywood studio movie in 25 years to feature a predominantly Asian cast in contemporary roles. The lavish visuals, heartfelt story, and exploration of cultural identity resonated globally while proving the universal appeal and commercial viability of diverse storytelling in mainstream cinema.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="beautyandthebeast" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('beautyandthebeast')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/beautyandthebeastmodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>BEAUTY AND THE BEAST</h2>
+                <p class="modal-year">2017 • Romance / Fantasy</p>
+                <div class="modal-cast">
+                    <h4>STARRING</h4>
+                    <ul>
+                        <li>Emma Watson as Belle</li>
+                        <li>Dan Stevens as the Beast</li>
+                        <li>Luke Evans as Gaston</li>
+                    </ul>
+                </div>
+                <p class="modal-synopsis">
+                    A kind-hearted young woman named Belle is taken prisoner by a fearsome beast in his enchanted castle. Despite her fears, she befriends the castle’s magical staff and learns to look beyond the Beast’s frightening exterior, discovering the kind heart and soul of the true prince within. This live-action adaptation of Disney’s animated classic celebrates love, compassion, and the power of seeing beyond appearances.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="10thingsihateaboutyou" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('10thingsihateaboutyou')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/10thingsihateaboutyoumodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>10 THINGS I HATE ABOUT YOU</h2>
+                <p class="modal-year">1999 • Romance / Comedy</p>
+                <div class="modal-cast">
+                    <h4>STARRING</h4>
+                    <ul>
+                        <li>Heath Ledger as Patrick Verona</li>
+                        <li>Julia Stiles as Kat Stratford</li>
+                        <li>Joseph Gordon-Levitt as Cameron James</li>
+                    </ul>
+                </div>
+                <p class="modal-synopsis">
+                    At a high school where dating is forbidden until the unpopular older sister finds a boyfriend, a new student schemes to set her up with the school rebel. What begins as a plan soon turns into unexpected romance. This modern adaptation of Shakespeare’s *The Taming of the Shrew* became a teen classic known for its humor, heart, and iconic performances.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="howtoloseaguyin10days" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('howtoloseaguyin10days')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/howtoloseaguyin10daysmodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>HOW TO LOSE A GUY IN 10 DAYS</h2>
+                <p class="modal-year">2003 • Romance / Comedy</p>
+                <div class="modal-cast">
+                    <h4>STARRING</h4>
+                    <ul>
+                        <li>Kate Hudson as Andie Anderson</li>
+                        <li>Matthew McConaughey as Benjamin Barry</li>
+                        <li>Kathryn Hahn as Michelle Rubin</li>
+                    </ul>
+                </div>
+                <p class="modal-synopsis">
+                    A magazine writer sets out to prove she can make a man fall in love with her and then drive him away in just ten days, while an advertising executive secretly bets he can make any woman fall in love with him within the same time frame. Their clashing schemes lead to hilarious misunderstandings, unexpected feelings, and a classic romantic comedy battle of the sexes.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- ================= SCRIPT ================= -->
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = "block";
+    document.body.style.overflow = "hidden";
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+    document.body.style.overflow = "auto";
+}
+</script>
+
+<footer>
+        <div class="footer-content">
+            <div class="footer-line"></div>
+            <p class="creator"><strong>Created by:</strong> GROUP 10</p>
+            <p class="creators"><strong> Cardoza, Ersando, Salonga, Zapanta </p>
+            <p class="course-info"><strong>Course:</strong> BSCS 1-5 </p>
+            <p class="year"><strong>Year:</strong> 2025</p>
+            <p class="institution">Cavite State University - Don Severino de las Alas Campus</p>
+            <p class="department">College of Engineering and Information Technology</p>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+
+</body>
+</html>

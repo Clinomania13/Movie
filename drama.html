@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drama Movies - Movie Posters by Genre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cinema-grain"></div>
+    
+    <header class="genre-header-streaming">
+        <a href="index.html" class="back-link-top">← BACK TO HOME</a>
+        <h1>🎭 DRAMA MOVIES</h1>
+        <p class="genre-description">Immerse yourself in powerful narratives that explore the depths of human emotion, complex relationships, and transformative experiences.</p>
+    </header>
+
+    <section class="streaming-section">
+        <h2 class="trending-title">Trending Drama Movies</h2>
+        
+        <div class="streaming-grid">
+            <!-- About Time -->
+            <div class="streaming-card" onclick="openModal('about-time')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/abouttime.jpg" alt="About Time Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>ABOUT TIME</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- Little Women -->
+            <div class="streaming-card" onclick="openModal('little-women')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/littlewomen.jpg" alt="Little Women Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>LITTLE WOMEN</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- Parasite -->
+            <div class="streaming-card" onclick="openModal('parasite')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/parasite.jpg" alt="Parasite Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>PARASITE</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- Forrest Gump -->
+            <div class="streaming-card" onclick="openModal('forrest-gump')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/forrestgump.jpg" alt="Forrest Gump Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>FORREST GUMP</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- 12 Years a Slave -->
+            <div class="streaming-card" onclick="openModal('12-years-a-slave')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/12yearsslave.jpg" alt="12 Years a Slave Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>12 YEARS A SLAVE</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- The Perks of Being a Wallflower -->
+            <div class="streaming-card" onclick="openModal('the-perks-of-being-a-wallflower')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/wallflower.jpg" alt="The Perks of Being a Wallflower Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>THE PERKS OF BEING A WALLFLOWER</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- Me Before You -->
+            <div class="streaming-card" onclick="openModal('me-before-you')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/mebeforeyou.jpg" alt="Me Before You Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>ME BEFORE YOU</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <!-- The Boy in the Striped Pajamas -->
+            <div class="streaming-card" onclick="openModal('the-boy-in-the-striped-pajamas')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/tbitsp.jpg" alt="The boy in the Stiped Pajamas Poster">
+                </div>
+                <div class="streaming-info">
+                    <h3>THE BOY IN THE STRIPED PAJAMAS</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Details Modals -->
+    <div id="about-time" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('about-time')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/abouttime.jpg" alt="About Time Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>ABOUT TIME</h2>
+                    <p class="modal-year">2013</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Rachel McAdams as Mary</li>
+                            <li>Domhnall Gleeson as Tim </li>
+                            <li>Bill Nighy as James Lake</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">About Time is a romantic fantasy that follows Tim Lake, a young man who discovers he has the ability to travel through time within his own life. This power allows him to correct past mistakes, especially in his pursuit of love with Mary. Through his journey, Tim learns valuable lessons about cherishing everyday moments, embracing life’s ordinary experiences, and accepting inevitable challenges and losses, guided in part by the wisdom of his father.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="little-women" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('little-women')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/littlewomen.jpg" alt="Little Women Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>LITTLE WOMEN</h2>
+                    <p class="modal-year">2019</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Saoirse Ronan as Jo March</li>
+                            <li>Eliza Scanlen as Beth March</li>
+                            <li>Emma Watson as Meg March</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">During the American Civil War, four sisters navigate childhood to adulthood, facing poverty, personal growth, ambition, and love while learning lessons about responsibility, compassion, and perseverance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="parasite" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('parasite')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/parasite.jpg" alt="Parasite Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>PARASITE</h2>
+                    <p class="modal-year">2019</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Song Kang-ho as Kim Ki-taek</li>
+                            <li>Lee Sun-kyun as Park Dong-ik</li>
+                            <li>Cho Yeo-jeong as Choi Yeon-gyo</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">An impoverished family living in a cramped basement apartment schemes to systematically infiltrate and exploit the lives of an extremely wealthy household, leading to increasingly tense and ultimately devastating consequences. Bong Joon-ho's genre-defying social thriller made history as the first foreign-language film to win Best Picture at the Academy Awards. The film brilliantly dissects class inequality, economic disparity, and social hierarchy through masterful storytelling that seamlessly blends dark comedy, suspense, and tragedy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="forrest-gump" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('forrest-gump')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/forrestgump.jpg" alt="Forrest Gump Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>FORREST GUMP</h2>
+                    <p class="modal-year">1994</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Tom Hank as Forrest Gump</li>
+                            <li>Robin Wright as Jenny Curran</li>
+                            <li>Gary Sinise as Lieutenant Dan Taylor</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A simple man with a low IQ but extraordinary heart witnesses and inadvertently influences several defining historical events in 20th century America while remaining devoted to his childhood sweetheart. Tom Hanks won his second consecutive Academy Award for this heartwarming and inspirational tale of perseverance, unconditional love, and the American experience. The film's groundbreaking visual effects seamlessly integrated Forrest into authentic historical footage, creating memorable and iconic cinematic moments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="12-years-a-slave" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('12-years-a-slave')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/12yearsslave.jpg" alt="12 Years A Slave Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>12 YEARS A SLAVE</h2>
+                    <p class="modal-year">2013</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Chiwetel Ejiofor as Solomon Northup</li>
+                            <li>Lupita Noyong'o as Patsey</li>
+                            <li>Michael Fassbender as Edwin Epps</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">Based on the harrowing true story of Solomon Northup, a free African-American man from New York who is kidnapped and sold into brutal slavery in the pre-Civil War South, enduring unimaginable horrors for twelve years before regaining his freedom. Steve McQueen's unflinching and powerful historical drama won Best Picture and gave Lupita Nyong'o her first Academy Award for her devastating performance. The film's brutal honesty and emotional intensity force viewers to confront the horrific reality and lasting legacy of American slavery.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="the-perks-of-being-a-wallflower" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('the-perks-of-being-a-wallflower')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/wallflower.jpg" alt="The Perks of Being a Wallflower Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>THE PERKS OF BEING A WALLFLOWER</h2>
+                    <p class="modal-year">2012</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Logan Lerman as Charlie</li>
+                            <li>Emma Watson as Sam</li>
+                            <li>Ezra Miller as Patrick</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A modern coming-of-age story, the novel follows Charlie, an introverted high school freshman who documents his experiences through letters to an anonymous recipient. As he forms friendships, experiences love, and confronts loss, Charlie also uncovers repressed trauma that leads to a mental breakdown. The story emphasizes healing, self-acceptance, and the importance of connection, portraying adolescence as a period of vulnerability and growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="me-before-you" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('me-before-you')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/mebeforeyou.jpg" alt="Me Before You Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>ME BEFORE YOU</h2>
+                    <p class="modal-year">2016</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Emilia Clarke as William Taylor</li>
+                            <li>Sam Clafin as Louisa Clark</li>
+                            <li>Janet McTeer as Camilla Traynor</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A lively young woman, Louisa Clark who becomes the caregiver of Will Traynor, a once-adventurous man left quadriplegic after an accident. As their relationship deepens, Louisa attempts to show Will that life still holds meaning, while Will remains determined to pursue assisted suicide. The story confronts complex ethical questions about choice, love, and dignity, culminating in Louisa’s painful acceptance of Will’s decision and her own personal growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="the-boy-in-the-striped-pajamas" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('the-boy-in-the-striped-pajamas')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/tbitsp.jpg" alt="The Boy in the Striped Pajamas Poster">
+                </div>
+                <div class="modal-details">
+                    <h2>THE BOY IN THE STRIPED PAJAMAS</h2>
+                    <p class="modal-year">2014</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Asa Butterfield as Bruno</li>
+                            <li>Jack Scanlon as Shmuel</li>
+                            <li>Vera Farmiga as Elsa</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">The Boy in the Striped Pajamas tells the tragic story of Bruno, a naive nine-year-old German boy whose family moves near a concentration camp due to his father’s position as a Nazi commandant. Bruno forms a secret friendship with Shmuel, a Jewish boy imprisoned in the camp, unaware of the camp’s horrific realities. Their bond ultimately leads Bruno to enter the camp in striped pajamas to help Shmuel, resulting in both being taken to the gas chambers, poignantly illustrating the loss of innocence and the brutality of the Holocaust.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-line"></div>
+            <p class="creator"><strong>Created by:</strong> GROUP 10</p>
+            <p class="creators"><strong> Cardoza, Ersando, Salonga, Zapanta </p>
+            <p class="course-info"><strong>Course:</strong> BSCS 1-5 </p>
+            <p class="year"><strong>Year:</strong> 2025</p>
+            <p class="institution">Cavite State University - Don Severino de las Alas Campus</p>
+            <p class="department">College of Engineering and Information Technology</p>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+</body>
+</html>

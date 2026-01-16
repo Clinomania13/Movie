@@ -1,0 +1,864 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: #0a0a0a;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Cinema Grain Effect */
+.cinema-grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, .03) 2px, rgba(255, 255, 255, .03) 4px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #ff6b6b;
+    position: relative;
+    z-index: 2;
+}
+
+.film-strip-top,
+.film-strip-bottom {
+    height: 15px;
+    background: linear-gradient(90deg,
+            #ff6b6b 0%, #ff6b6b 10%,
+            transparent 10%, transparent 20%,
+            #ff6b6b 20%, #ff6b6b 30%,
+            transparent 30%, transparent 40%,
+            #ff6b6b 40%, #ff6b6b 50%,
+            transparent 50%, transparent 60%,
+            #ff6b6b 60%, #ff6b6b 70%,
+            transparent 70%, transparent 80%,
+            #ff6b6b 80%, #ff6b6b 90%,
+            transparent 90%, transparent 100%);
+    margin: 1rem 0;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 8px;
+    margin: 1.5rem 0;
+    text-shadow:
+        0 0 10px #ff6b6b,
+        0 0 20px #ff6b6b,
+        0 0 30px #ff6b6b,
+        4px 4px 0px rgba(0, 0, 0, 0.8);
+    font-weight: 900;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.intro {
+    font-size: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #ddd;
+}
+
+/* Genre Navigation Section */
+.genre-navigation {
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    letter-spacing: 6px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #ff6b6b;
+    margin: 1rem auto;
+}
+
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.genre-card {
+    background: #1a1a1a;
+    border: 3px solid #333;
+    border-radius: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(10, 10, 10, 0.9) 100%);
+    transition: all 0.4s ease;
+}
+
+.genre-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+}
+
+.genre-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 10px rgba(255, 107, 107, 0.5));
+}
+
+.genre-card h3 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.genre-divider {
+    width: 60px;
+    height: 3px;
+    background: #ff6b6b;
+    margin: 1rem auto;
+}
+
+.genre-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.view-more {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #ff6b6b;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.genre-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff6b6b;
+    box-shadow:
+        0 10px 40px rgba(255, 107, 107, 0.3),
+        inset 0 0 100px rgba(255, 107, 107, 0.1);
+}
+
+.genre-card:hover .card-overlay {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.3) 0%, rgba(10, 10, 10, 0.7) 100%);
+}
+
+.genre-card:hover .view-more {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Different accent colors for each genre */
+.action-card:hover {
+    border-color: #ff6b6b;
+}
+
+.comedy-card:hover {
+    border-color: #ffd93d;
+}
+
+.drama-card:hover {
+    border-color: #6bcf7f;
+}
+
+.horror-card:hover {
+    border-color: #a855f7;
+}
+
+.romance-card:hover {
+    border-color: #ff69b4;
+}
+
+.scifi-card:hover {
+    border-color: #00d4ff;
+}
+
+/* Website Info Section */
+.website-info {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.info-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 300px;
+    background: #1a1a1a;
+    border-left: 4px solid #ff6b6b;
+    padding: 2rem;
+    position: relative;
+}
+
+.info-number {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ff6b6b;
+    opacity: 0.3;
+}
+
+.info-box h3 {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+}
+
+.info-box p {
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+.navigation-guide,
+.external-links {
+    background: #1a1a1a;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #333;
+}
+
+.navigation-guide h3,
+.external-links h3 {
+    color: #ff6b6b;
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+}
+
+.guide-list,
+.resource-list {
+    margin-left: 2rem;
+}
+
+.guide-list li,
+.resource-list li {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+a {
+    color: #ff6b6b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #ff6b6b;
+}
+
+/* Movie Grid Styles (for genre pages) */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+.movie-card {
+    background: #1a1a1a;
+    border: 3px solid #333;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    border-color: #ff6b6b;
+    box-shadow: 0 10px 40px rgba(255, 107, 107, 0.4);
+}
+
+.movie-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #2a1a1a 0%, #1a0a0a 100%);
+    border: 4px solid #ff6b6b;
+    box-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
+}
+
+.movie-poster {
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #ff6b6b;
+}
+
+.movie-info {
+    padding: 2rem;
+}
+
+.movie-info h3 {
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+.movie-year {
+    color: #999;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.movie-cast {
+    margin: 1.5rem 0;
+    border-top: 2px solid #333;
+    padding-top: 1rem;
+}
+
+.movie-cast h4 {
+    color: #ff6b6b;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.movie-cast ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.movie-cast ul li {
+    color: #ddd;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+.movie-cast ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #ff6b6b;
+}
+
+.movie-synopsis {
+    line-height: 1.8;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+/* Genre Page Styles */
+.genre-header {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 4px solid #ff6b6b;
+}
+
+/* Streaming Layout Styles */
+.genre-header-streaming {
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.8) 100%);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.back-link-top {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    color: #ff6b6b;
+    border: 2px solid #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.back-link-top:hover {
+    background: #ff6b6b;
+    color: #0a0a0a;
+}
+
+.streaming-section {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.trending-title {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.streaming-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.streaming-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.streaming-card:hover {
+    transform: scale(1.05);
+    border-color: #ff6b6b;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+.streaming-poster {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.streaming-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.streaming-poster-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.streaming-info {
+    padding: 1rem;
+}
+
+.streaming-info h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.watch-btn {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.watch-btn:hover {
+    background: #ff5252;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    margin: 3% auto;
+    padding: 0;
+    border: 3px solid #ff6b6b;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 12px;
+    position: relative;
+    animation: modalSlideIn 0.4s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #ff6b6b;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #ff6b6b;
+}
+
+.modal-layout {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.modal-poster {
+    flex: 0 0 350px;
+    width: 350px;
+    height: 500px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 3px solid #333;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+.modal-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.modal-poster-img {
+    flex: 0 0 350px;
+    width: 350px;
+    height: 500px;
+    object-fit: contain;
+    object-position: center;
+    border: 3px solid #333;
+    background: #000;
+}
+
+.modal-details {
+    flex: 1;
+    color: #fff;
+}
+
+.modal-details h2 {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.modal-year {
+    color: #999;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.modal-cast {
+    margin: 2rem 0;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 1.5rem 0;
+}
+
+.modal-cast h4 {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.modal-cast ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.modal-cast ul li {
+    color: #ddd;
+    margin-bottom: 0.7rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+.modal-cast ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #ff6b6b;
+}
+
+.modal-synopsis {
+    line-height: 1.9;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.genre-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 6px;
+    text-shadow:
+        0 0 10px #ff6b6b,
+        0 0 20px #ff6b6b,
+        4px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+.genre-description {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #ddd;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    color: #ff6b6b;
+    border: 3px solid #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: #ff6b6b;
+    color: #0a0a0a;
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+    transform: translateX(-5px);
+}
+
+/* Footer Styles */
+footer {
+    background: #0a0a0a;
+    color: #999;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    border-top: 4px solid #ff6b6b;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-line {
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #ff6b6b 50%, transparent 100%);
+    margin: 1.5rem 0;
+}
+
+footer p {
+    margin: 0.8rem 0;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+.creator {
+    color: #ff6b6b;
+    font-size: 1.1rem;
+}
+
+.course-info,
+.year {
+    color: #ddd;
+}
+
+.institution,
+.department {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+
+    .genre-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .movie-card.featured {
+        grid-column: span 1;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .streaming-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .modal-layout {
+        flex-direction: column;
+    }
+
+    .modal-poster {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 400px;
+    }
+
+    .modal-poster-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .back-link-top {
+        position: static;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+}

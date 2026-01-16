@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi Movies - Movie Posters by Genre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cinema-grain"></div>
+
+<header class="genre-header-streaming">
+    <a href="index.html" class="back-link-top">← BACK TO HOME</a>
+    <h1>🚀 SCI-FI MOVIES</h1>
+    <p class="genre-description">
+        Journey beyond the boundaries of reality into imaginative worlds of advanced technology, space exploration, and mind-bending concepts.
+    </p>
+</header>
+
+<section class="streaming-section">
+    <h2 class="trending-title">Trending Sci-Fi Movies</h2>
+
+    <div class="streaming-grid">
+
+        <!-- BLADE RUNNER 2049 -->
+        <div class="streaming-card" onclick="openModal('bladerunner')">
+            <img src="IMAGES/bladerunner2049.jpg" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>BLADE RUNNER 2049</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- INTERSTELLAR -->
+        <div class="streaming-card" onclick="openModal('interstellar')">
+            <img src="IMAGES/interstellar.jpg" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>INTERSTELLAR</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- ARRIVAL -->
+        <div class="streaming-card" onclick="openModal('arrival')">
+            <img src="IMAGES/arrival.jpg" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>ARRIVAL</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- EX MACHINA -->
+        <div class="streaming-card" onclick="openModal('exmachina')">
+            <img src="IMAGES/exmachina.jpg" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>EX MACHINA</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- DUNE -->
+        <div class="streaming-card" onclick="openModal('dune')">
+            <img src="IMAGES/dune.jpg" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>DUNE</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+        
+        <!-- AD ASTRA -->
+        <div class="streaming-card" onclick="openModal('adastra')">
+            <img src="IMAGES/adastra.jpg" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>AD ASTRA</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- ALITA: BATTLE ANGEL -->
+        <div class="streaming-card" onclick="openModal('alita')">
+            <img src="IMAGES/thealitabattleangel.jpg" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>ALITA: BATTLE ANGEL</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+        <!-- READY PLAYER ONE -->
+        <div class="streaming-card" onclick="openModal('readyplayerone')">
+            <img src="IMAGES/readyplayerone.jpg" class="streaming-poster">
+            <div class="streaming-info">
+                <h3>READY PLAYER ONE</h3>
+                <button class="watch-btn">▶ View Details</button>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- ================= MODALS ================= -->
+
+<!-- BLADE RUNNER 2049 MODAL -->
+<div id="bladerunner" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('bladerunner')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/bladerunner2049modal.jpeg" class="modal-poster">
+            <div class="modal-details">
+                <h2>BLADE RUNNER 2049</h2>
+                <p class="modal-year">2017</p>
+                <div class="movie-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Ryan Gosling as Officer K</li>
+                            <li>Harrison Ford as Rick Deckard</li>
+                            <li>Ana de Armas as Joi</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+A young blade runner working for the LAPD discovers a long-buried secret about replicants that has the potential to plunge what remains of human society into complete chaos, leading him on a desperate quest to find the legendary Rick Deckard, a former blade runner who has been missing for thirty years. Denis Villeneuve's visually stunning and philosophically profound sequel brilliantly expands on the original film's themes of identity, consciousness, memory, and what it truly means to be human in an increasingly artificial world. Legendary cinematographer Roger Deakins finally won his first Academy Award after fourteen previous nominations for the film's breathtaking and meticulously crafted visuals. The movie explores existential questions about artificial beings becoming indistinguishable from humans while creating one of cinema's most beautiful dystopian futures.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INTERSTELLAR MODAL -->
+<div id="interstellar" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('interstellar')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/interstellarmodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>INTERSTELLAR</h2>
+                <p class="modal-year">2014</p>
+                <div class="movie-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Matthew McConaughey as Joseph Cooper</li>
+                            <li>Anne Hathaway as Dr. Amelia Brand</li>
+                            <li>Jessica Chastain as Murphy Cooper</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+In a near-future where Earth faces environmental collapse and humanity's extinction, a team of explorers travels through a mysterious wormhole near Saturn to search for habitable planets and ensure the survival of the human race across space and time. Christopher Nolan's ambitious epic masterfully combines scientifically accurate concepts about relativity, black holes, and space-time with deeply emotional storytelling about love, sacrifice, and the parent-child bond transcending dimensions. The film's groundbreaking depiction of a black hole was so accurate that it resulted in actual scientific papers being published based on the visual effects work.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ARRIVAL MODAL -->
+<div id="arrival" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('arrival')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/arrivalmodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>ARRIVAL</h2>
+                <p class="modal-year">2016</p>
+                <div class="movie-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Amy Adams as Dr. Louise Banks</li>
+                            <li>Jeremy Renner as Ian Donnelly</li>
+                            <li>Forest Whitaker as Colonel Weber</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+When twelve mysterious alien spacecraft appear at various locations around Earth, a brilliant linguist is recruited by the military to communicate with the extraterrestrial visitors before escalating global tensions lead to war and destruction. Denis Villeneuve's thoughtful and cerebral science fiction masterpiece explores the profound connections between language, thought, time perception, and human understanding. Amy Adams delivers a deeply moving performance in this meditation on communication, grief, acceptance, and the transformative power of perspective that challenges our fundamental assumptions about time and causality.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- EX MACHINA MODAL -->
+<div id="exmachina" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('exmachina')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/exmachinamodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>EX MACHINA</h2>
+                <p class="modal-year">2014</p>
+                <div class="movie-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Domhnall Gleeson as Caleb Smith</li>
+                            <li>Alicia Vikander as Ava</li>
+                            <li>Oscar Isaac as Nathan Bateman</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+A young programmer wins a competition to spend a week at the isolated mountain estate of his company's reclusive CEO, where he discovers he's been chosen to participate in a groundbreaking experiment evaluating the consciousness and capabilities of a sophisticated humanoid artificial intelligence. Alex Garland's directorial debut is a tense psychological thriller that poses profound questions about consciousness, manipulation, free will, and what truly defines sentient life. Alicia Vikander's nuanced performance as the enigmatic AI earned widespread critical acclaim and launched her to stardom.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DUNE MODAL -->
+<div id="dune" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('dune')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/dunemodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>DUNE</h2>
+                <p class="modal-year">2021</p>
+                <div class="movie-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Timothée Chalamet as Paul Atreides</li>
+                            <li>Rebecca Ferguson as Lady Jessica</li>
+                            <li>Oscar Isaac as Duke Leto Atreides</li>
+                        </ul>
+                    </div>
+                <p class="modal-synopsis">
+A brilliant and sensitive young man born into a great destiny beyond his understanding must travel to the most dangerous planet in the universe to ensure the future of his family and people as a galactic power struggle unfolds over control of the desert world Arrakis and its precious resource spice melange. Denis Villeneuve successfully adapted Frank Herbert's notoriously complex and philosophical science fiction novel into a visually stunning and emotionally engaging epic that explores themes of colonialism, environmentalism, religion, and political power. The film won six Academy Awards including Best Cinematography and Best Visual Effects for its breathtaking desert landscapes and massive scale.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="adastra" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('adastra')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/adastramodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>AD ASTRA</h2>
+                <p class="modal-year">2019</p>
+                <div class="movie-cast">
+                    <h4>STARRING</h4>
+                    <ul>
+                        <li>Brad Pitt as Roy McBride</li>
+                        <li>Tommy Lee Jones as Clifford McBride</li>
+                        <li>Ruth Negga as Helen Lantos</li>
+                    </ul>
+                </div>
+                <p class="modal-synopsis">
+                    An astronaut travels across the solar system to uncover the truth about his missing father and a mysterious mission that threatens the survival of humanity. As he ventures deeper into space, he confronts the limits of human isolation, emotional control, and the meaning of connection in an indifferent universe.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="alita" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('alita')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/thealitabattleangelmodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>ALITA: BATTLE ANGEL</h2>
+                <p class="modal-year">2019</p>
+                <div class="movie-cast">
+                    <h4>STARRING</h4>
+                    <ul>
+                        <li>Rosa Salazar as Alita</li>
+                        <li>Christoph Waltz as Dr. Dyson Ido</li>
+                        <li>Jennifer Connelly as Chiren</li>
+                    </ul>
+                </div>
+                <p class="modal-synopsis">
+                    Found abandoned in a scrapyard, a cyborg girl awakens with no memory of her past and discovers extraordinary combat abilities. As Alita learns about her origins, she must navigate a dangerous world and embrace her destiny to fight for justice in a futuristic society.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="readyplayerone" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('readyplayerone')">&times;</span>
+        <div class="modal-layout">
+            <img src="IMAGES/readyplayeronemodal.jpg" class="modal-poster">
+            <div class="modal-details">
+                <h2>READY PLAYER ONE</h2>
+                <p class="modal-year">2018</p>
+                <div class="movie-cast">
+                    <h4>STARRING</h4>
+                    <ul>
+                        <li>Tye Sheridan as Wade Watts</li>
+                        <li>Olivia Cooke as Samantha Cook</li>
+                        <li>Ben Mendelsohn as Nolan Sorrento</li>
+                    </ul>
+                </div>
+                <p class="modal-synopsis">
+                    In a dystopian future where people escape reality through a vast virtual universe, a young gamer embarks on a high-stakes quest to find a hidden Easter egg left by the system’s creator. The race soon becomes a battle for control over the digital world and the future of humanity.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = "block";
+    document.body.style.overflow = "hidden";
+}
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+    document.body.style.overflow = "auto";
+}
+</script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-line"></div>
+            <p class="creator"><strong>Created by:</strong> GROUP 10</p>
+            <p class="creators"><strong> Cardoza, Ersando, Salonga, Zapanta </p>
+            <p class="course-info"><strong>Course:</strong> BSCS 1-5 </p>
+            <p class="year"><strong>Year:</strong> 2025</p>
+            <p class="institution">Cavite State University - Don Severino de las Alas Campus</p>
+            <p class="department">College of Engineering and Information Technology</p>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+</body>
+</html>

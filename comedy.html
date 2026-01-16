@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedy Movies - Movie Posters by Genre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cinema-grain"></div>
+    
+    <header class="genre-header-streaming">
+        <a href="index.html" class="back-link-top">← BACK TO HOME</a>
+        <h1>😂 COMEDY MOVIES</h1>
+        <p class="genre-description">These films blend humor, family dynamics, and absurd situations to deliver laughter, heart, and relatable life lessons. From magical mishaps to romantic chaos and friendship misadventures, each story combines comedy with warmth and entertainment.</p>
+    </header>
+
+    <section class="streaming-section">
+        <h2 class="trending-title">Trending Comedy Movies</h2>
+        
+        <div class="streaming-grid">
+            <div class="streaming-card" onclick="openModal('Girl, Boy, Bakla, Tomboy')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Girl,Boy,Bakla,Tomboy.jpg" alt="Girl, Boy, Bakla, Tomboy Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Girl, Boy, Bakla, Tomboy</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('The Mall, The Merrier!')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/The Mall, The Merrier!.jpg" alt="The Mall, The Merrier! Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>The Mall, The Merrier!</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Moron 5 and the Crying Lady')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Moron 5 and the Crying Lady.jpg" alt="Moron 5 and the Crying Lady Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Moron 5 and the Crying Lady</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Four Sisters and a Wedding')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Four Sisters and a Wedding.jpg" alt="Four Sisters and a Wedding Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Four Sisters and a Wedding</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Sosyal Climbers')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Sosyal Climbers.webp" alt="Sosyal Climbers Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Sosyal Climbers</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Love Is Blind')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Love Is Blind.jpg" alt="Love Is Blind Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Love Is Blind</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Ang Pangarap Kong Holdap')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Ang Pangarap Kong Holdap.jpg" alt="Ang Pangarap Kong Holdap Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Ang Pangarap Kong Holdap</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Momshies! Your Soul Is Mine')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Momshies! Your Soul Is Mine.webp" alt="Momshies! Your Soul Is Mine Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Momshies! Your Soul Is Mine</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Details Modals -->
+    <div id="Girl, Boy, Bakla, Tomboy" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Girl, Boy, Bakla, Tomboy')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Girl,Boy,Bakla,Tomboy.jpg" alt="Girl, Boy, Bakla, Tomboy Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Girl, Boy, Bakla, Tomboy</h2>
+                    <p class="modal-year">2013 • Comedy</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Vice Ganda</li>
+                            <li>Maricel Soriano</li>
+                            <li>Joey Marquez</li>
+                            <li>Ruffa Gutierrez</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">After being separated for 25 years, quadruplets Girlie, Peter, Mark, and Panying reunite when Peter falls seriously ill and needs a liver donor. Mark, the only compatible donor, agrees on one condition: their estranged father and sister must experience the struggles he, Panying, and their mother endured. As family tensions resurface and hidden schemes threaten reconciliation, the siblings must confront their differences to rebuild their broken family through humor, forgiveness, and love.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="The Mall, The Merrier!" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('The Mall, The Merrier!')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/The Mall, The Merrier!.jpg" alt="The Mall, The Merrier! Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>The Mall, The Merrier!</h2>
+                    <p class="modal-year">2019 • Comedy</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Vice Ganda</li>
+                            <li>Anne Curtis</li>
+                            <li>Andrea Brillantes</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">Separated siblings Moira and Morisette reunite after the sudden loss of their parents, only to clash over the ownership of their family’s mall. Their rivalry escalates into a sales competition, uncovering long-buried family secrets and unresolved resentment. When a mysterious spell book brings mannequins and objects in the mall to life, the sisters are forced to work together to stop the chaos. Through humor, fantasy, and reconciliation, they learn the true value of family and unity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Moron 5 and the Crying Lady" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Moron 5 and the Crying Lady')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Moron 5 and the Crying Lady.jpg" alt="Moron 5 and the Crying Lady Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Moron 5 and the Crying Lady</h2>
+                    <p class="modal-year">2012 • Comedy</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Luis Manzano</li>
+                            <li>Billy Crawford</li>
+                            <li>DJ Durano</li>
+                            <li>Martin Escudero</li>
+                            <li>Marvin Agustin</li>
+                            <li>John Lapus</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">Five simple-minded but good-hearted friends find their lives turned upside down after being falsely accused of causing a woman’s family tragedy. Sent to prison despite their innocence, they struggle to clear their names while enduring a series of misadventures. Determined to uncover the truth, they infiltrate the woman’s household and stumble upon a web of secrets and disguises that explain her intense hatred toward them. As danger and comedy collide, the group must rely on their friendship and persistence to survive and seek justice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Four Sisters and a Wedding" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Four Sisters and a Wedding')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Four Sisters and a Wedding.jpg" alt="Four Sisters and a Wedding Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Four Sisters and a Wedding</h2>
+                    <p class="modal-year">2013 • Comedy</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Bea Alonzo</li>
+                            <li>Angel Locsin</li>
+                            <li>Toni Gonzaga</li>
+                            <li>Shaina Magdayao</li>
+                            <li>Enchong Dee</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">When the youngest Salazar sibling announces his wedding, his four sisters return home and try to stop it, uncovering decades of family tension along the way. Amid failed schemes, misunderstandings, and heartfelt conversations, they learn the importance of forgiveness and reconciliation. In the end, love and family prevail, teaching them the true meaning of unity and support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Sosyal Climbers" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Sosyal Climbers')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Sosyal Climbers.webp" alt="Sosyal Climbers Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Sosyal Climbers</h2>
+                    <p class="modal-year">2025 • Comedy</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Maris Racal</li>
+                            <li>Anthony Jennings</li>
+                            <li>Ricky Davao</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">After being scammed, Jessa and Ray find themselves in huge debt. Using false identities, the couple infiltrates high society to gain the money they need. Their charade leads to comedic situations, testing both their morals and their relationship as they navigate the glamorous but unpredictable world of the elite.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Love Is Blind" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Love Is Blind')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Love Is Blind.jpg" alt="Love Is Blind Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Love Is Blind</h2>
+                    <p class="modal-year">2016 • Comedy</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Derek Ramsay</li>
+                            <li>Kiray Celis</li>
+                            <li>Solenn Heussaff</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A young woman insecure about her looks uses a magic potion to make her crush see her as more attractive. Initially successful, her plan spirals into comedic chaos as the potion begins to wear off. She learns that love is more than appearances and that honesty and self-acceptance are the keys to happiness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Ang Pangarap Kong Holdap" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Ang Pangarap Kong Holdap')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Ang Pangarap Kong Holdap.jpg" alt="Ang Pangarap Kong Holdap Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Ang Pangarap Kong Holdap</h2>
+                    <p class="modal-year">2018 • Comedy</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Pepe Herrera</li>
+                            <li>Jerald Napoles</li>
+                            <li>Jelson Bay</li>
+                            <li>Paolo Contis</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">Down-on-his-luck robber Eman Durucut assembles a gang of thieves aiming to become the top crew in their neighborhood. Unknown to them, Nicoy is an undercover cop, adding chaos and comedic tension to their heist plans. As their schemes unfold, hilarious misadventures and personal conflicts put their friendship and ambitions to the test.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Momshies! Your Soul Is Mine" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Momshies! Your Soul Is Mine')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Momshies! Your Soul Is Mine.webp" alt="Momshies! Your Soul Is Mine Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Momshies! Your Soul Is Mine</h2>
+                    <p class="modal-year">2021 • Comedy</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Jolina Magdangal</li>
+                            <li>Karla Estrada</li>
+                            <li>Melai Cantiveros</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">Three women with completely different lives accidentally swap souls, leading to comedic mishaps as they navigate each other’s daily routines. Through their misadventures, they gain a deeper appreciation for their own families, friendships, and personal lives, realizing that love and understanding are key to happiness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-line"></div>
+            <p class="creator"><strong>Created by:</strong> GROUP 10</p>
+            <p class="creators"><strong> Cardoza, Ersando, Salonga, Zapanta </p>
+            <p class="course-info"><strong>Course:</strong> BSCS 1-5 </p>
+            <p class="year"><strong>Year:</strong> 2025</p>
+            <p class="institution">Cavite State University - Don Severino de las Alas Campus</p>
+            <p class="department">College of Engineering and Information Technology</p>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+</body>
+</html>

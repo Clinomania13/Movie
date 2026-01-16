@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Movies - Movie Posters by Genre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cinema-grain"></div>
+    
+    <header class="genre-header-streaming">
+        <a href="index.html" class="back-link-top">← BACK TO HOME</a>
+        <h1>💥 Action Movies</h1>
+        <p class="genre-description">High-energy films featuring intense physical conflict, thrilling stunts, and high-stakes confrontations. Heroes face danger, fight adversaries, and overcome overwhelming odds in fast-paced, adrenaline-filled stories.</p>
+    </header>
+
+    <section class="streaming-section">
+        <h2 class="trending-title">Trending Action Movies</h2>
+    
+        <div class="streaming-grid">
+            <div class="streaming-card" onclick="openModal('Terminator 2: Judgment Day')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Terminator.jpg" alt="Terminator 2: Judgment Day Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Terminator 2: Judgment Day</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('The Bourne Ultimatum')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/The Bourne Ultimatum.webp" alt="The Bourne Ultimatum Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>The Bourne Ultimatum</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Point Break')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Point Break.jpg" alt="Point Break Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Point Break</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('X2: X-Men United')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/X-Men United.avif" alt="X2: X-Men United Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>X2: X-Men United</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('The Wild Bunch')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/The Wild Bunch.jpg" alt="The Wild Bunch Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>The Wild Bunch</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Avengers: Infinity War')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Infinity War.webp" alt="Avengers: Infinity War Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Avengers: Infinity War</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Rebel Bridge')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/Rebel Bridge.jpg" alt="Rebel Bridge Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Rebel Bridge</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+
+            <div class="streaming-card" onclick="openModal('Unstoppable')">
+                <div class="streaming-poster">
+                    <img src="IMAGES/unstoppable.jpg" alt="Unstoppable Movie Poster" loading="lazy">
+                </div>
+                <div class="streaming-info">
+                    <h3>Unstoppable</h3>
+                    <button class="watch-btn">▶ View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Details Modals -->
+    <div id="Terminator 2: Judgment Day" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Terminator 2: Judgment Day')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Terminator.jpg" alt="Terminator 2: Judgment Day Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Terminator 2: Judgment Day</h2>
+                    <p class="modal-year">1991 • Action</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Arnold Schwarzenegger</li>
+                            <li>Linda Hamilton</li>
+                            <li>Edward Furlong</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A deadly Terminator is sent back in time to eliminate humanity’s last hope, only to be opposed by a reprogrammed cyborg protector. As Sarah Connor prepares for Judgment Day, explosive chases, daring escapes, and revolutionary visual effects drive the story forward. From the aqueduct pursuit to the Cyberdyne assault and the final steel mill confrontation, the film blends nonstop action with deeper questions about fate, technology, and survival.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="The Bourne Ultimatum" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('The Bourne Ultimatum')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/The Bourne Ultimatum.webp" alt="The Bourne Ultimatum Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>The Bourne Ultimatum</h2>
+                    <p class="modal-year">2007 • Action</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Matt Damon</li>
+                            <li>Julia Stiles</li>
+                            <li>David Strathairn</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">Jason Bourne is pulled out of hiding when a determined reporter exposes a secret CIA program called Blackbriar. As Bourne pieces together his past, he must dodge relentless agents sent to eliminate him and uncover the truth behind his training as a lethal operative. From high-speed chases to close-quarters combat, Bourne battles against overwhelming odds to finally confront the dark secrets of his life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Point Break" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Point Break')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Point Break.jpg" alt="Point Break Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Point Break</h2>
+                    <p class="modal-year">1991 • Action</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Patrick Swayze</li>
+                            <li>Keanu Reeves</li>
+                            <li>Gary Busey</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">In Los Angeles, a gang of bank robbers known as The Ex-Presidents commits crimes while wearing masks of former U.S. Presidents. The FBI suspects that the robbers are surfers and sends young agent Johnny Utah undercover to infiltrate their beach lifestyle. As Utah grows closer to the charismatic surfer Bodhi, he becomes torn between duty and friendship, navigating thrilling surf-and-crime encounters while trying to bring the gang to justice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="X2: X-Men United" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('X2: X-Men United')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/X-Men United.avif" alt="X2: X-Men United Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>X2: X-Men United</h2>
+                    <p class="modal-year">2003 • Action</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Patrick Stewart</li>
+                            <li>Hugh Jackman</li>
+                            <li>Ian McKellen</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">Professor Charles Xavier and his team of mutants face growing anti-mutant hostility as Col. William Stryker enacts a dangerous plan to eradicate their kind. The X-Men must unite to stop Stryker while confronting personal challenges and testing the limits of their powers. From thrilling battles to high-stakes strategy, the team fights to protect both mutants and humanity from annihilation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="The Wild Bunch" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('The Wild Bunch')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/The Wild Bunch.jpg" alt="The Wild Bunch Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>The Wild Bunch</h2>
+                    <p class="modal-year">1969 • Action</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>William Holden</li>
+                            <li>Ernest Borgnine</li>
+                            <li>Robert Ryan</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">The Wild Bunch, a gang of aging outlaws, attempts one last daring heist—stealing rifles from the U.S. Army for Mexican warlord Mapache. As they navigate betrayal, brutal violence, and shifting allegiances, the gang faces an apocalyptic final showdown at Mapache’s hacienda. The story portrays men out of time, struggling to survive in a rapidly changing West, blending nihilistic violence with a surprising undercurrent of loyalty and sentiment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Avengers: Infinity War" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Avengers: Infinity War')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Infinity War.webp" alt="Avengers: Infinity War Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Avengers: Infinity War</h2>
+                    <p class="modal-year">2018 • Action</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Robert Downey Jr.</li>
+                            <li>Chris Hemsworth</li>
+                            <li>Scarlett Johansson</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">The Avengers must unite to stop Thanos from collecting all six Infinity Stones, which would give him the power to destroy half of all life in the universe. From intense battles in New York to a tense confrontation on Titan and a massive showdown in Wakanda, the heroes fight against overwhelming odds. Despite their efforts, Thanos emerges victorious, leaving the universe in peril and setting the stage for a desperate fight in Avengers: Endgame.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Rebel Bridge" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Rebel Bridge')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Rebel Bridge.jpg" alt="Rebel Bridge Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Rebel Bridge</h2>
+                    <p class="modal-year">2024 • Action</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Aaron Pierre</li>
+                            <li>Don Johnson</li>
+                            <li>AnnaSophia Robb</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A former Marine becomes entangled in a network of small-town corruption when he attempts to post bail for his cousin. What starts as a simple act of family loyalty quickly escalates into a violent showdown with the town’s powerful and ruthless police chief.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Unstoppable" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Unstoppable')">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-poster">
+                    <img src="IMAGES/Unstoppable.jpg" alt="Unstoppable Movie Poster" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <h2>Unstoppable</h2>
+                    <p class="modal-year">2010 • Action</p>
+                    <div class="modal-cast">
+                        <h4>STARRING</h4>
+                        <ul>
+                            <li>Denzel Washington</li>
+                            <li>Chris Pine</li>
+                            <li>Rosario Dawson</li>
+                        </ul>
+                    </div>
+                    <p class="modal-synopsis">A massive, unmanned locomotive hurtles out of control, threatening to cause a catastrophic disaster. Two unlikely heroes must race against time, using skill and courage to stop the train and save countless lives. Their relentless efforts test their limits as they face extreme danger at every turn.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-line"></div>
+            <p class="creator"><strong>Created by:</strong> GROUP 10</p>
+            <p class="creators"><strong> Cardoza, Ersando, Salonga, Zapanta </p>
+            <p class="course-info"><strong>Course:</strong> BSCS 1-5 </p>
+            <p class="year"><strong>Year:</strong> 2025</p>
+            <p class="institution">Cavite State University - Don Severino de las Alas Campus</p>
+            <p class="department">College of Engineering and Information Technology</p>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+</body>
+</html>
